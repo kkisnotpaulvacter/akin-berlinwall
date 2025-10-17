@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #121212; }
+    audio { width: 85%; max-width: 500px; outline: none; }
+    /* 美化一下播放器在Chrome/Edge下的样式 */
+    audio::-webkit-media-controls-panel { background-color: #282828; }
+    audio::-webkit-media-controls-play-button { background-color: #4CAF50; border-radius: 50%; }
+    audio::-webkit-media-controls-current-time-display,
+    audio::-webkit-media-controls-time-remaining-display,
+    audio::-webkit-media-controls-timeline { color: #ffffff; }
+  </style>
+</head>
+<body>
+  <audio controls controlslist="nodownload" autoplay>
+    <source src="https://cdn.jsdelivr.net/gh/kkisnotpaulvacter/akin-berlinwall/berlinwallsongofmyself.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+</body>
+</html>
